@@ -1,5 +1,5 @@
 {
-  "name": "react-18-boilerplate",
+  "name": "avatar-looking",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,9 +21,14 @@
   "author": "Gerson Toribio",
   "license": "ISC",
   "dependencies": {
+    "@juggle/resize-observer": "^3.4.0",
+    "@react-three/drei": "^9.57.0",
+    "@react-three/fiber": "^8.11.9",
     "@types/react": "^18.0.14",
+    "file-loader": "^6.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.150.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
