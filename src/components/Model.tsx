@@ -22,16 +22,15 @@ export default function Model({ ...props }) {
   const top = useRef<SkinnedMesh<BufferGeometry>>(null);
 
   useFrame(({ mouse, viewport }) => {
-    const x = (mouse.x * viewport.width);
-    const y = (mouse.y * viewport.height);
-    console.log({ x, y });
-    leftEye.current?.lookAt(new Vector3(x, y - 1.5, 10));
-    rightEye.current?.lookAt(new Vector3(x, y - 1.5, 10));
-    head.current?.lookAt(new Vector3(x, y  - 1.5, 10));
-    hair.current?.lookAt(new Vector3(x, y  - 1.5, 10));
-    glasses.current?.lookAt(new Vector3(x, y  - 1.5, 10));
-    teeth.current?.lookAt(new Vector3(x, y  - 1.5, 10));
-    top.current?.lookAt(new Vector3(x, y  - 1.5, 10));
+    const x = mouse.x * viewport.width;
+    const y = mouse.y * viewport.height;
+    leftEye.current?.lookAt(new Vector3(x, y - 1.5, 8));
+    rightEye.current?.lookAt(new Vector3(x, y - 1.5, 8));
+    head.current?.lookAt(new Vector3(x, y - 1.5, 8));
+    hair.current?.lookAt(new Vector3(x, y - 1.5, 8));
+    glasses.current?.lookAt(new Vector3(x, y - 1.5, 8));
+    teeth.current?.lookAt(new Vector3(x, y - 1.5, 8));
+    top.current?.lookAt(new Vector3(x, y - 1.5, 8));
   });
 
   return (
